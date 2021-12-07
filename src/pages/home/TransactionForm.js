@@ -13,7 +13,6 @@ export default function TransactionForm({ uid }) {
             name,
             amount
         })
-        console.log("response " + response.success)
     }
 
     // reset the form fields
@@ -21,7 +20,6 @@ export default function TransactionForm({ uid }) {
         if (response.success) {
             setName('')
             setAmount('')
-            console.log(response.success)
         }
     }, [response.success])
 
